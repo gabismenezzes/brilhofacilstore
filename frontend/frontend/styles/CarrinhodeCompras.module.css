@@ -1,33 +1,40 @@
 .card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border: none;
+  border-radius: 12px;
   padding: 1rem;
   text-align: center;
-  transition: 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
+
 
 .image {
   width: 100%;
   max-height: 180px;
   object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .button {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background: #ff4081;
+  background: #4FC3F7;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .button:hover {
-  background: #e73370;
+  background: #039BE5;
 }
