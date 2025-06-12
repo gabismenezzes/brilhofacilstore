@@ -6,7 +6,6 @@
 
 - **Frontend:** Next.js 15 (React), TypeScript, CSS Modules
 - **Backend:** ASP.NET Core Web API
-- **Estilização:** Tailwind CSS (ou CSS puro, se estiver usando)
 - **Integração:** Comunicação via API REST entre frontend e backend
 
 ## 📦 Funcionalidades
