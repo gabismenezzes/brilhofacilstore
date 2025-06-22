@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import ProductCard from "../components/CarrinhodeCompras";
+import DetectorFacial from "../components/DetectorFacial";
 
 type Produto = {
   id: number;
@@ -27,17 +28,20 @@ export default function Home() {
 
   return (
     <section>
-      <h2 style={{ textAlign: "center" }}>Semijoias em Destaque</h2>
-      <div style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-        gap: "1rem",
-        marginTop: "2rem"
-      }}>
-        {produtos.map((produto) => (
-          <ProductCard key={produto.id} produto={produto} />
-        ))}
-      </div>
-    </section>
+  <h2 style={{ textAlign: "center" }}>Semijoias em Destaque</h2>
+
+  <DetectorFacial />
+
+  <div style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
+    gap: "1rem",
+    marginTop: "2rem"
+  }}>
+    {produtos.map((produto) => (
+      <ProductCard key={produto.id} produto={produto} />
+    ))}
+  </div>
+</section>
   )
 }
